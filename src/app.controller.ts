@@ -55,7 +55,7 @@ export class AppController {
     if(!this.#productList[id]){
       throw new NotFoundException('No product with this ID')
     } 
-    this.#productList[id] = data.name
+    this.#productList[id] = data
 
     
   }
